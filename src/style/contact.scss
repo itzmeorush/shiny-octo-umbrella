@@ -1,0 +1,68 @@
+@import 'colors';
+
+.contact{
+    width: 100%;
+    height: 100%;
+    background-color:$dark ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // color: $first;
+    
+    >main{
+        scroll-margin-top: 0rem !important;
+        height: 30rem;
+        width: 70%;
+        padding: 3rem;
+        background-color: $first;
+        border-radius: 0 200px 200px 0;
+        margin: 70px 0;
+        h1{
+            text-transform: uppercase;
+        }
+    }
+    form{
+        margin: 5rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        >div{
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 60%;
+            margin: 0.5rem;
+            >label{
+                width: 20%;
+                margin: 0 1rem;
+                font: 400 1.2rem "Roboto";
+            }
+            >input{
+                align-self: stretch;
+                width: 80%;
+                padding: 1rem;
+                border-radius: 5px;
+                border: 1px solid rgba(123,123,123,0.6);
+                outline: none;
+            }
+        }
+        button{
+            padding: 0.7rem;
+            margin: 3rem;
+            border: none;
+            background-color: $third;
+            color: white;
+            border-radius: 5px;
+            width: 200px;
+            cursor: pointer;
+            font-size: 1rem;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+       
+    }
+   
+}
